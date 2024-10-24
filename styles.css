@@ -163,12 +163,15 @@ body {
     height: 95vh;
   }
   .land-button {
-    position: absolute;
-    margin-right: -100px;
+    position: relative;
+    right: 65px;
+    margin-left: 200px;
+    margin-top: -100px;
+    bottom: 100px;
   }
 }
 
-@media only screen and (max-width: 1366px) {
+@media (min-width: 1366px) {
   .land-button {
     position: relative;
     float: left;
