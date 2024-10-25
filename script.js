@@ -58,7 +58,7 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-
+// ! Loading animation
 window.addEventListener('load', function() {
   // Once the page loads, hide the loading screen and show the main content
   const loadingScreen = document.getElementById('loading-screen');
@@ -98,10 +98,6 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
-
-
-
 
 function validateForm() {
   const name = document.getElementById("name").value;
