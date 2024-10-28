@@ -116,15 +116,13 @@ body {
 .land-container{
   background: rgb(206,215,222);
   background: linear-gradient(90deg, rgba(206,215,222,1) 0%, rgba(76,156,173,1) 100%, rgba(220,222,233,1) 100%);
-  height: 90vh;
-  margin-bottom: -200px;
-  max-width: 3000px;
+  width: 100%;
 }
+
 .landing-image {
- margin-top: 100px;
- display: block;
- width: 85%;
- margin-left: 100px;
+ width: 80%;
+ margin-top: 140px;
+ margin-left: 130px;
  }
 
 .land-button {
@@ -142,14 +140,14 @@ body {
 }
 
 /* Desktop styles */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .mobile-image {
       display: none;
   }
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .landing-image {
       display: none;
   }
@@ -173,18 +171,12 @@ body {
   }
 }
 
-@media (min-width: 1366px) {
-  .land-button {
-    position: relative;
-    float: left;
-    right: 225px;
-    margin-left: 630px;
-    margin-top: -200px;
-  }
+@media (max-width: 992px) {
+
   .land-container{
     width: 100%;
-    height: 90vh;
   }
+
 }
 
 
@@ -666,7 +658,7 @@ textarea.input {
 }
 
 .about-us2{
-  margin-top: 100px;
+  margin-top: -60px;
 }
 
 .features2{
