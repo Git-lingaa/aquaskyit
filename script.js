@@ -1,22 +1,3 @@
-const inputs = document.querySelectorAll(".input");
-
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-}
-
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value == "") {
-    parent.classList.remove("focus");
-  }
-}
-
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
-});
-
 
 // ! Hamburger menu toggle
 document.getElementById("hamburger").onclick = function() {
@@ -24,26 +5,23 @@ document.getElementById("hamburger").onclick = function() {
     navLinks.classList.toggle("show");
 };
 
-window.onscroll = function() {shrinkNavbar()};
+// Shrinking Navbar and Progress Arrow
+window.addEventListener("scroll", () => {
+  // Shrink navbar
+  const navbar = document.getElementById("sky-navbar");
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    navbar.classList.add("shrink");
+  } else {
+    navbar.classList.remove("shrink");
+  }
 
-function shrinkNavbar() {
-    var navbar = document.getElementById("sky-navbar");
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        navbar.classList.add("shrink");
-    } else {
-        navbar.classList.remove("shrink");
-    }
-}
-
-// ! Progress Arrow
-let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
+  // Progress arrow
+  const scrollProgress = document.getElementById("progress");
+  const progressValue = document.getElementById("progress-value");
+  const pos = document.documentElement.scrollTop;
+  const calcHeight =
+    document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollValue = Math.round((pos * 100) / calcHeight);
   if (pos > 100) {
     scrollProgress.style.display = "grid";
   } else {
@@ -53,10 +31,8 @@ let calcScrollValue = () => {
     document.documentElement.scrollTop = 0;
   });
   scrollProgress.style.background = `conic-gradient(rgb(14, 176, 168) ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-};
+});
 
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
 
 // ! Loading animation
 window.addEventListener('load', function() {
