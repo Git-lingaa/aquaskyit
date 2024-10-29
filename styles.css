@@ -23,13 +23,14 @@ body {
     background-color: #ffffff;
     transition: all 0.3s ease;
     z-index: 2;
+    padding: 20px 20px;
 }
 
 .skynavbar-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    
     transition: padding 0.3s ease;
 }
 
@@ -102,7 +103,7 @@ body {
 
 /* Shrink effect for navbar */
 .shrink {
-    padding: 10px 10%;
+    padding: 10px 20px;
 }
 
 .shrink .logo {
