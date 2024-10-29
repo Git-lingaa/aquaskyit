@@ -36,6 +36,7 @@ body {
 
 .skylogo img{
   width: 150px;
+  margin-left: 60px;
 }
 
 .skynav-links {
@@ -43,6 +44,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-right: 100px;
 }
 
 .skynav-links li {
@@ -133,7 +135,7 @@ body {
   background: #09617c;
   position: absolute;
   margin-top: -200px;
-  margin-left: 460px;
+  margin-left: 400px;
 }
 
 .land-button:hover{
@@ -1011,6 +1013,7 @@ textarea.input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
+  margin-top: -100px;
 }
 .box-wrapper1{
   position: relative;

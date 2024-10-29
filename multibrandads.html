@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <title>SkyIt</title>
+     <link href="./styles.css"rel="stylesheet"/>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+     <!-- Libraries Stylesheet -->
+
+<!-- Customized Bootstrap Stylesheet -->
+    <link href="./lib/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <a href="https://api.whatsapp.com/send/?phone=
+    +987654321&amp;text=Hi" class="whatsapp-widget" target="_blank">
+        <img src="./assets/whatsappwidget.png" alt="WhatsApp">
+    </a>
+
+    <div id="progress">
+      <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+
+   
+
+<!-- Navbar Starts -->
+    <div class="sky-navbar" id="sky-navbar">
+      <div class="skynavbar-content">
+          <a href="./index.html"><div class="skylogo"><img src="./assets/Skyitlogo.png" alt=""></div></a>
+          <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+          <ul class="skynav-links" id="skynav-links">
+              <li><a href="./index.html">Home</a></li>
+          </ul>
+      </div>
+  </div>
+   <!-- Navbar Ends -->
+    
+
+   <section class="ad-mosaic">
+    <div class="responsive-container-block Container bottomContainer">
+    <img class="mainImg" src="./assets/about-1.webp">
+    <div class="allText bottomText">
+      <p class="text-blk headingText" style="color: rgb(14, 176, 168); font-size: 40px; margin-bottom: 20px;">
+        Multi Brand Ads
+      </p>
+      <p class="text-blk description" style="font-size: 19px; color: black; margin-bottom: 10px; text-align: justify;">
+        Our Multi Brand Ads service offers a dynamic, budget-friendly solution for brands seeking high visibility. With multiple brands sharing ad space on each bottle, you benefit from a vibrant and engaging presence that catches attention and keeps your costs low. Ideal for collaborative promotions or brands looking to stand out within a shared format, this option ensures your message is seen alongside other unique brands in a colourful, cohesive display.
+      </p>
+      <a class="getquote-btn" id="openFormBtn">Get Quote</a>
+      <p style="margin-top: 20px; color: black;">Want To Know More Call Us At +91 94876 16722</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal (Pop-up Form) -->
+<div id="quoteModal" class="getquote-form1">
+  <span class="close-btn">x</span>
+<div class="container8">
+  
+    <form id="quoteForm" onsubmit="return validateForm()">
+        <h2 class="quote-form1">Get a Quote</h2>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone No.</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="service">Service</label>
+            <select id="service" name="service">
+                <option value="" disabled selected>Select a Service</option>
+                <option value="Multi Brand Ads" selected>Multi Brand Ads</option>
+                <option value="Spotlight Solo">Spotlight Solo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="bottleSize">Bottle Size</label>
+            <select id="bottleSize" name="bottleSize">
+                <option value="" disabled selected>Select Bottle Size</option>
+                <option value="300ml">300 ml</option>
+                <option value="500mL">500 ml</option>
+                <option value="1000mL">1000 ml</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Quantity Required</label>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group">
+            <button class="quote-btn" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+<!-- Modal (Pop-up Form Ends) -->
+  
+<section>
+    <footer class="footer2">
+     <div class="footer-content1">
+         <ul class="socials2">
+             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+         </ul>
+     </div>
+     <div class="footer-bottom">
+         <p>copyright &copy;2024 AquaSkyIt</p>
+     </div>
+ </footer>
+ </section>
+ 
+ 
+ 
+ <script src="https://kit.fontawesome.com/9efaf94ef4.js" crossorigin="anonymous"></script>
+
+
+ <!-- JavaScript Libraries -->
+ <script src="./script.js"></script>
+   </body>
+ </html>
+ 
