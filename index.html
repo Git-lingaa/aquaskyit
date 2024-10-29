@@ -15,8 +15,7 @@
   </head>
   <body>
     
-    <a href="https://api.whatsapp.com/send/?phone=
-    +987654321&amp;text=Hi" class="whatsapp-widget" target="_blank">
+    <a href="https://api.whatsapp.com/send/?phone= +91 9487616722&amp;text=Hi" class="whatsapp-widget" target="_blank">
         <img src="./assets/whatsappwidget.png" alt="WhatsApp">
     </a>
 
@@ -46,7 +45,7 @@
           <ul class="skynav-links" id="skynav-links">
               <li><a href="#about">About</a></li>
               <li><a href="#service">Services</a></li>
-              <li><a href="#section-wrapper1">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
           </ul>
       </div>
   </div>
@@ -59,7 +58,7 @@
     <div class="land-container"><div>
     <img class="landing-image" src="./assets/imgland.svg" alt=""></div>
     <img class="mobile-image" src="./assets/ADMOBILE.png" alt="">
-    <a href="#section-wrapper1" id="contact-popupbtn"><button class="land-button">Advertise With Us</button></a>
+    <a href="#contact"><button class="land-button">Advertise With Us</button></a>
 </div>
 
 
@@ -80,10 +79,10 @@
                 <p class="text-blk description" style="font-size: 19px; color: black;">
                   SkyIt is setting a new standard in brand visibility by transforming everyday essentials into powerful advertising tools. Our mission is clear “to make your brand not only seen but impossible to ignore”
                 </p>
-                <p class="text-blk description" style="font-size: 19px; color: black;">At SkyIt, we believe in turning something as ordinary as a water bottle into an extraordinary advertising medium. Our unique approach combines essential hydration with impactful marketing, ensuring that your brand gets into the hands of every consumer.</p>
+                <p class="text-blk description" style="font-size: 19px; color: black; margin-top: -40px;">At SkyIt, we believe in turning something as ordinary as a water bottle into an extraordinary advertising medium. Our unique approach combines essential hydration with impactful marketing, ensuring that your brand gets into the hands of every consumer.</p>
               </div>
             </div>
-            <div class="responsive-container-block Container bottomContainer" data-aos="fade-up">
+            <div class="responsive-container-block Container bottomContainer" data-aos="fade-up" style="margin-top: 10px;">
               <img class="mainImg" src="./assets/about-1.webp">
               <div class="allText bottomText">
                 <p class="text-blk headingText anie left-to-right" style="color: rgb(14, 176, 168);">
@@ -100,10 +99,10 @@
 
 
 <!-- Service Start -->
-<section id="service"><br><br><br>
+<section id="service" style="margin-top: -70px;">
 <div class="container-xxl py-5" >
   <div class="container" data-aos="fade-up">
-      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 30px;">
           <p lass="text-blk headingText" style="color: rgb(14, 176, 168); font-weight: 600; font-size: 40px;">Our Services</p>
           <h1 class="servicetxt1" style="font-size: 40px;">SkyIt offers a unique advertising space on water bottles.</h1>
       </div>
@@ -179,7 +178,7 @@
 <!-- Features End -->
 
 <!--Extra-->
-<section>
+<section style="margin-bottom: 75px;">
 <div class="container-xxl about my-5" data-aos="fade-up">
     <div class="container">
         <div class="row g-0">
@@ -213,9 +212,10 @@
 </div></section>
 <!-- Extra Ends-->
 
-
-<section id="section-wrapper1"><br><br>
-    <div class="box-wrapper1" data-aos="fade-up">
+<div style="margin-top: 1px; margin-bottom: 80px;">
+<section id="section-wrapper1">
+  <form action="submitform.php" method="post">
+    <div class="box-wrapper1" data-aos="fade-up" id="contact">
         <div class="info-wrap1">
             <h2 class="info-title1">Contact Information</h2>
             <h3 class="info-sub-title1">Fill up the form and our Team will get back to you within 24 hours</h3>
@@ -226,7 +226,7 @@
                 </li>
                 <li>
                     <i class="fas fa-paper-plane"></i>
-                    <span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                    <span>Email:</span> <a href="mailto:info@aquaskyit.com">info@aquaskyit.com</a>
                 </li>
             </ul>
             <ul class="social-icons6">
@@ -248,29 +248,16 @@
                     <div class="form-group1">
                         <input  class="phone" placeholder="Phone" required>
                     </div>
-                    <div class="form-group1" style="box-shadow: none;">
-                      <select name="service" required>
-                          <option value="" disabled selected>Select a Service</option>
-                          <option value="Multi Brand Ads">Multi Brand Ads</option>
-                          <option value="Spotlight Solo">Spotlight Solo</option>
-                      </select>
-                  </div>
-          
-                  <div class="form-group1" style="box-shadow: none;">
-                      <select id="bottleSize" name="bottleSize" required>
-                          <option value="" disabled selected>Select Bottle Size</option>
-                          <option value="300ml">300 ml</option>
-                          <option value="500mL">500 ml</option>
-                          <option value="1000mL">1000 ml</option>
-                      </select>
-                  </div>
-          
-                </div>
+                    
+
+
+                    </div>
                 <input type="submit" value="SUBMIT" class="submit-button1">
               </div>
         </div>
-    </div>
+    </div></form>
 </section>
+</div>
 
 <section>
    <footer class="footer2">

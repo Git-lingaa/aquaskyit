@@ -62,57 +62,55 @@
 
  <!-- Modal (Pop-up Form) -->
 <div id="quoteModal" class="getquote-form1">
+ 
   <div class="container8">
-    <span class="close-btn">x</span>
-      <form id="quoteForm" onsubmit="return validateForm()">
-          <h2 class="quote-form1">Get a Quote</h2>
-  
-          <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name">
-          </div>
-  
-          <div class="form-group">
-              <label for="phone">Phone No.</label>
-              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-          </div>
-  
-          <div class="form-group">
-              <label for="email">Email ID</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email">
-          </div>
-  
-          <div class="form-group">
-              <label for="service">Service</label>
-              <select id="service" name="service">
-                  <option value="" disabled selected>Select a Service</option>
-                  <option value="Multi Brand Ads">Multi Brand Ads</option>
-                  <option value="Spotlight Solo" selected>Spotlight Solo</option>
-              </select>
-          </div>
-  
-          <div class="form-group">
-              <label for="bottleSize">Bottle Size</label>
-              <select id="bottleSize" name="bottleSize">
-                  <option value="" disabled selected>Select Bottle Size</option>
-                  <option value="300ml">300 ml</option>
-                  <option value="500mL">500 ml</option>
-                  <option value="1000mL">1000 ml</option>
-              </select>
-          </div>
-  
-          <div class="form-group">
-              <label for="quantity">Quantity Required</label>
-              <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity">
-          </div>
-  
-          <div class="form-group">
-              <button class="quote-btn" type="submit">Submit</button>
-          </div>
-      </form>
+    <form action="/submitform.php" method="post" id="quoteForm" onsubmit="return validateForm()">
+      <h2 class="quote-form1">Get a Quote</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone No.</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service">Service</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Select a Service</option>
+            <option value="Multi Brand Ads" >Multi Brand Ads</option>
+            <option value="Spotlight Solo" selected>Spotlight Solo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="bottleSize">Bottle Size</label>
+          <select id="bottleSize" name="bottleSize">
+            <option value="" disabled selected>Select Bottle Size</option>
+            <option value="300ml">300 ml</option>
+            <option value="500mL">500 ml</option>
+            <option value="1000mL">1000 ml</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity Required</label>
+          <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity">
+        </div>
+      </div>
+      <div class="form-group">
+        <button class="quote-btn" type="submit">Submit</button>
+        <span class="close-btn" onclick="closeModal()">Close</span>
+      </div>
+    </form>
   </div>
-  </div>
-  <!-- Modal (Pop-up Form Ends) -->
+</div>
+<!-- Modal (Pop-up Form Ends) -->
 
 
   <section>
