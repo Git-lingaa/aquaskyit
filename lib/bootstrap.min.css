@@ -350,9 +350,7 @@ textarea {
     line-height: inherit
 }
 
-button, {
-    text-transform: none
-}
+
 
 [role="button"] {
     cursor: pointer
@@ -364,12 +362,7 @@ button, {
     display: none
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button
-}
+
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -427,10 +420,7 @@ legend+* {
     height: auto
 }
 
-[type="search"] {
-    outline-offset: -2px;
-    -webkit-appearance: textfield
-}
+
 
 ::-webkit-search-decoration {
     -webkit-appearance: none
@@ -2480,7 +2470,6 @@ textarea.form-control-lg {
     background-size: contain;
     border: 1px solid rgba(0, 0, 0, 0.25);
     appearance: none;
-    color-adjust: exact;
 }
 
 .form-check-input[type="checkbox"] {

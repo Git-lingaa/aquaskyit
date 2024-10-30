@@ -23,6 +23,7 @@ body {
     transition: all 0.3s ease;
     z-index: 2;
     padding: 20px 20px;
+    background: white;
 }
 
 .skynavbar-content {
@@ -52,10 +53,9 @@ body {
 }
 
 .skynav-links a {
-    color: rgb(0, 0, 0);
+    color: #009688;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .skynav-links a:hover {
@@ -76,6 +76,8 @@ body {
   transition: 0.3s;
   
 }
+
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -109,8 +111,9 @@ body {
 
 /* Shrink effect for navbar */
 .shrink {
-    padding: 10px 20px;
-    background: white;
+    padding: 10px 10px;
+    background: rgb(206,215,222);
+  background: linear-gradient(90deg, rgba(206,215,222,1) 0%, rgba(76,156,173,1) 100%, rgba(220,222,233,1) 100%);
 }
 
 .shrink .logo {
